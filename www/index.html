@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>C + WebAssembly</title>
 	<style>
-		body { 
-			font-family: 'Inter', sans-serif; 
-			display: flex; 
-			flex-direction: column; 
-			align-items: center; 
-			justify-content: center; 
-			min-height: 100vh; 
-			background: #0f172a; 
-			color: #f8fafc; 
+		body {
+			font-family: 'Inter', sans-serif;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			background: #0f172a;
+			color: #f8fafc;
 			margin: 0;
 		}
 
-		h1 { 
-			color: #38bdf8; 
-			margin-bottom: 20px; 
+		h1 {
+			color: #38bdf8;
+			margin-bottom: 20px;
 		}
 
-		#output { 
-			background: #1e293b; 
-			padding: 20px; 
-			border-radius: 12px; 
-			font-family: 'Courier New', monospace; 
-			white-space: pre-wrap; 
-			width: 80%; 
-			max-width: 600px; 
-			border: 1px solid #334155; 
+		#output {
+			background: #1e293b;
+			padding: 20px;
+			border-radius: 12px;
+			font-family: 'Courier New', monospace;
+			white-space: pre-wrap;
+			width: 80%;
+			max-width: 600px;
+			border: 1px solid #334155;
 			box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 		}
 	</style>
 </head>
-<body>
-    <h1>C + WebAssembly 🚀</h1>
-    <div id="output">Loading .wasm...</div>
 
-    <script>
-        var Module = {
-            print: function(text) {
-                const output = document.getElementById('output');
-                if (output.innerText === "Loading .wasm...") {
-                    output.innerText = "";
-                }
-                output.innerText += text + "\n";
-            }
-        };
-    </script>
-    <script src="a.out.js"></script>
+<body>
+	<h1>C + WebAssembly 🚀</h1>
+	<div id="output">Loading .wasm...</div>
+
+	<script>
+		var Module = {
+			print: function (text) {
+				const output = document.getElementById('output');
+				if (output.innerText === "Loading .wasm...") {
+					output.innerText = "";
+				}
+				output.innerText += text + "\n";
+			}
+		};
+	</script>
+	<script src="main.js"></script>
 </body>
+
 </html>

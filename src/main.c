@@ -10,7 +10,7 @@ struct Product {
 	float price;
 };
 
-int main() {
+int main(void) {
 	struct Product shop[SHOP_SIZE] = {
 		{101, "Smartphone", 799.99},
 		{102, "Laptop",     1250.00},
