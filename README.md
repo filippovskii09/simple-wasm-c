@@ -7,6 +7,11 @@ This project is a simple **Goods Accounting System** that allocates structures o
 
 ---
 
+### Result
+You can see the result without cloning this repo by this link https://filippovskii09.github.io/simple-wasm-c/
+
+---
+
 ## 💡 Concepts & Terms
 
 To understand how this works, here are the main building blocks:
