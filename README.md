@@ -44,6 +44,13 @@ brew install emscripten
 
 ## 🚀 Getting Started
 
+### Structures
+
+**src**     - folder with source code
+**build**   - folder with compiled code
+**www**     - folder with web interface(html, js, wasm)
+
+
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/your-username/simple_wasm.git
